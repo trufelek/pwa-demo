@@ -2,9 +2,11 @@
   "name": "pwa-demo",
   "version": "1.0.0",
   "description": "Basic PWA demo",
+  "homepage": "https://trufelek.github.io/pwa-demo/",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -c-1 -p 8081"
+    "start": "http-server -c-1 -p 8081",
+    "deploy": "npm install&npm start&gh-pages -d build"
   },
   "keywords": [
     "pwa"
@@ -12,6 +14,7 @@
   "author": "Aleksandra Wierzbiak",
   "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "http-server": "^0.10.0"
   }
 }
