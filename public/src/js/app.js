@@ -6,7 +6,7 @@ var barks = ['woof1', 'woof2'];
 
 // register service worker
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
+    navigator.serviceWorker.register('sw.js')
         .then(function() {
             console.log('SW registered');
         });
