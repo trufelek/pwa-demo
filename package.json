@@ -1,0 +1,17 @@
+{
+  "name": "pwa-demo",
+  "version": "1.0.0",
+  "description": "Basic PWA demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 8081"
+  },
+  "keywords": [
+    "pwa"
+  ],
+  "author": "Aleksandra Wierzbiak",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}

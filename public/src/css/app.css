@@ -1,0 +1,63 @@
+body {
+    font-family: Lobster;
+    font-size: 18px;
+    margin: 0;
+}
+
+#app {
+    align-items: center;
+    background: pink;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.bubble {
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+    min-width: 150px;
+    opacity: 0;
+    position: absolute;
+    top: -75px;
+    left: -60px;
+    transition: all 0.5s ease;
+}
+
+.bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: white;
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -15px;
+    margin-bottom: -20px;
+}
+
+.bubble.on {
+    opacity: 1;
+}
+
+.doggy {
+    background: url('../img/dog-stand.png') no-repeat center center;
+    cursor: pointer;
+    height: 250px;
+    width: 250px;
+}
+
+.doggy.sits {
+    background: url('../img/dog-sit.png') no-repeat center center;
+}
