@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#fd167f">
     <title>PWA demo</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/app.css">
     <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/src/img/icons/icon-48x48.png">
   </head>
   <body>
     <div id="app">
       <div class="wrapper">
+        <noscript>
+          <div class="bubble on">JS is disabled :(</div>
+        </noscript>
         <div class="bubble"></div>
         <div class="doggy"></div>
       </div>
