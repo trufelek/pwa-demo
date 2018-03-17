@@ -5,12 +5,12 @@ self.addEventListener('install', function (event) {
         caches.open('static')
             .then(function (cache) {
                 cache.addAll([
-                    './',
-                    'index.html',
-                    'src/js/app.js',
-                    'src/css/app.css',
-                    'src/img/dog-sit.png',
-                    'src/img/dog-stand.png',
+                    '/',
+                    '/index.html',
+                    '/src/js/app.js',
+                    '/src/css/app.css',
+                    '/src/img/dog-sit.png',
+                    '/src/img/dog-stand.png',
                     'https://fonts.googleapis.com/css?family=Lobster'
                 ]);
             })
